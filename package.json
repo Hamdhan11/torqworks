@@ -1,0 +1,15 @@
+{
+  "name": "smartmanufacture-erp-root",
+  "version": "1.0.0",
+  "description": "SmartManufacture ERP - AI-Assisted Manufacturing Management System for Automotive Industries",
+  "scripts": {
+    "server": "npm --prefix server start",
+    "client": "npm --prefix client dev",
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client dev\"",
+    "seed": "npm --prefix server run seed",
+    "install-all": "npm install && npm --prefix server install && npm --prefix client install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
